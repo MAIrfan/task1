@@ -1,5 +1,6 @@
 import { Component } from 'react';
-import './App.css';
+import './components/FontAwesome'
+import './css/PricingTable.css';
 import PricingTable from './components/PricingTable';
 
 

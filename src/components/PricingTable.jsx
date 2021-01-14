@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 class PricingTable extends Component {
     render() { 
@@ -7,19 +8,20 @@ class PricingTable extends Component {
                 <div class="col-4">
                     <div class="pricingTable">
                         <div class="pricingTable-header">
+                            <div className="price-value">
+                                <div className="amount">$0</div>
+                                <span class="month">Per month</span>
+                            </div>
                             <h3 class="title">Stater</h3>
-                            <span class="currency">$</span>
-                            <span class="price-value">0</span>
-                            <span class="month">Per user, per month</span>
                         </div>
                         <div class="pricing-content">
                             <ul>
-                                <li>Centralized teams</li>
-                                <li>Version history</li>
-                                <li>Plugin administration</li>
-                                <li class="disable">Facebook & Instagram Ads</li>
-                                <li class="disable">Design System Analytics</li>
-                                <li class="disable">Unlimited cloud storage</li>
+                                <li><FontAwesomeIcon icon="check-circle"/><span>Centralized teams</span></li>
+                                <li><FontAwesomeIcon icon="check-circle"/><span>Version history</span></li>
+                                <li><FontAwesomeIcon icon="check-circle"/><span>Plugin administration</span></li>
+                                <li><FontAwesomeIcon icon="times-circle"/><span>Facebook & Instagram Ads</span></li>
+                                <li><FontAwesomeIcon icon="times-circle"/><span>Design System Analytics</span></li>
+                                <li><FontAwesomeIcon icon="times-circle"/><span>Unlimited cloud storage</span></li>
                             </ul>
                             <a class="pricingTable-signup" href="pass">Go Starter</a>
                         </div>
@@ -29,19 +31,20 @@ class PricingTable extends Component {
                 <div class="col-4">
                     <div class="pricingTable">
                         <div class="pricingTable-header">
+                            <div className="price-value">
+                                <div className="amount">$20</div>
+                                <span class="month">Per month</span>
+                            </div>
                             <h3 class="title">Professional</h3>
-                            <span class="currency">$</span>
-                            <span class="price-value">25</span>
-                            <span class="month">Per user, per month</span>
                         </div>
                         <div class="pricing-content">
                             <ul>
-                                <li>Centralized teams</li>
-                                <li>Version history</li>
-                                <li>Plugin administration</li>
-                                <li>Facebook & Instagram Ads</li>
-                                <li class="disable">Design System Analytics</li>
-                                <li class="disable">Unlimited cloud storage</li>
+                                <li><FontAwesomeIcon icon="check-circle"/><span>Centralized teams</span></li>
+                                <li><FontAwesomeIcon icon="check-circle"/><span>Version history</span></li>
+                                <li><FontAwesomeIcon icon="check-circle"/><span>Plugin administration</span></li>
+                                <li><FontAwesomeIcon icon="check-circle"/><span>Facebook & Instagram Ads</span></li>
+                                <li><FontAwesomeIcon icon="times-circle"/><span>Design System Analytics</span></li>
+                                <li><FontAwesomeIcon icon="times-circle"/><span>Unlimited cloud storage</span></li>
                             </ul>
                             <a class="pricingTable-signup" href="pass">Go Professional</a>
                         </div>
@@ -51,19 +54,20 @@ class PricingTable extends Component {
                 <div class="col-4">
                     <div class="pricingTable">
                         <div class="pricingTable-header">
+                            <div className="price-value">
+                                <div className="amount">$50</div>
+                                <span class="month">Per month</span>
+                            </div>
                             <h3 class="title">Organization</h3>
-                            <span class="currency">$</span>
-                            <span class="price-value">50</span>
-                            <span class="month">Per user, per month</span>
                         </div>
                         <div class="pricing-content">
                             <ul>
-                                <li>Centralized teams</li>
-                                <li>Version history</li>
-                                <li>Plugin administration</li>
-                                <li>Facebook & Instagram Ads</li>
-                                <li>Design System Analytics</li>
-                                <li>Unlimited cloud storage</li>
+                                <li><FontAwesomeIcon icon="check-circle"/><span>Centralized teams</span></li>
+                                <li><FontAwesomeIcon icon="check-circle"/><span>Version history</span></li>
+                                <li><FontAwesomeIcon icon="check-circle"/><span>Plugin administration</span></li>
+                                <li><FontAwesomeIcon icon="check-circle"/><span>Facebook & Instagram Ads</span></li>
+                                <li><FontAwesomeIcon icon="check-circle"/><span>Design System Analytics</span></li>
+                                <li><FontAwesomeIcon icon="check-circle"/><span>Unlimited cloud storage</span></li>
                             </ul>
                             <a class="pricingTable-signup" href="pass">Go Organization</a>
                         </div>
