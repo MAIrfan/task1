@@ -1,38 +1,93 @@
-.App {
+.pricingTable{
   text-align: center;
+  transform: translateY(0);
+  transition: all 0.3s ease 0s;
+  width: auto;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.pricingTable:hover{
+  transform: translateY(-20px); /* highlight table  */
+  box-shadow: 0 0 20px #000;  /* highlight shadow  */
+  border-radius: 20px;
 }
+.pricingTable .pricingTable-header{
+  background: #dda200;
+  padding: 20px 0;
+  position: relative;
+  transition: all 0.3s ease 0s;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.pricingTable:hover .pricingTable-header{
+  background: #dbb345;
+  border-radius: 20px;
+  box-shadow: 0 0 20px #a58705;
 }
-
-.App-link {
-  color: #61dafb;
+.pricingTable .title{
+  font-family: 'Courier New', 'Courier', 'monospace';
+  font-size: 35px;
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  margin: 0 0 10px 0;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.pricingTable .currency{
+  display: inline-block;
+  font-size: 25px;
+  font-weight: 700;
+  color: #fff;
+}
+.pricingTable .price-value{
+  display: inline-block;
+  font-size: 60px;
+  font-weight: 700;
+  color: #fff;
+  padding-right: 5px;
+}
+.pricingTable .month{
+  font-size: 13px;
+  font-weight: 600;
+  color: #fff;
+}
+.pricingTable .pricing-content{
+  background: #ffffff;
+  padding: 25px 20px;
+}
+.pricingTable .pricing-content li:before{
+  content: "\f00c";
+  color: #338806;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  padding-right: 10px;
+}
+.pricingTable .pricing-content li.disable:before{
+  content: "\f00d";
+  color: #bb5057;
+}
+.pricingTable .pricing-content ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.pricingTable .pricing-content ul li{
+  font-size: 16px;
+  color: #000;
+  margin-bottom: 20px;
+}
+.pricingTable .pricingTable-signup{
+  display: block;
+  padding: 10px 0;
+  background: #9e9e9e;
+  font-size: 14px;
+  font-weight: 900;
+  color: #fff;
+  text-transform: uppercase;
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+}
+.pricingTable .pricingTable-signup:hover{
+  box-shadow: 0 0 10px #34accd;
+  border-radius: 15px;
+  letter-spacing: 1px;
+}
+.pricingTable:hover .pricingTable-signup{ 
+  background: #34accd;
 }
