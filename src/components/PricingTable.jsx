@@ -29,7 +29,7 @@ class PricingTable extends Component {
                 </div>
          
                 <div class="col-4">
-                    <div class="pricingTable">
+                    <div class="pricingTable pink">
                         <div class="pricingTable-header">
                             <div className="price-value">
                                 <div className="amount">$20</div>
@@ -52,7 +52,7 @@ class PricingTable extends Component {
                 </div>
                 
                 <div class="col-4">
-                    <div class="pricingTable">
+                    <div class="pricingTable blue">
                         <div class="pricingTable-header">
                             <div className="price-value">
                                 <div className="amount">$50</div>

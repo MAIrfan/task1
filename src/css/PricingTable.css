@@ -83,6 +83,7 @@
   margin: 15px 10px 0px 10px;
   border-radius: 15px;
   background: linear-gradient(to right,#e2b824,#c16807);
+  box-shadow: 0 10px 15px #c18607;
   font-size: 14px;
   font-weight: 900;
   color: #fff;
@@ -91,10 +92,18 @@
   text-decoration: none;
 }
 .pricingTable .pricingTable-signup:hover{
-  box-shadow: 0 0 10px #ce7d26;
-  border-radius: 15px;
   letter-spacing: 1px;
 }
-.pricingTable:hover .pricingTable-signup{ 
-  background: #e99700;
+
+.pricingTable.pink .pricingTable-header .title,
+.pricingTable.pink .price-value,
+.pricingTable.pink .pricingTable-signup{
+    background: linear-gradient(to right,#ef52d7,#a40a8c);
+    box-shadow: 0 10px 15px #b207c1;
+}
+.pricingTable.blue .pricingTable-header .title,
+.pricingTable.blue .price-value,
+.pricingTable.blue .pricingTable-signup{
+    background: linear-gradient(to right,#00a2f3,#0073b1);
+    box-shadow: 0 10px 15px #0742c1;
 }
